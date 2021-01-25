@@ -72,6 +72,11 @@ public class screenShaderGUI : ShaderGUI
                 materialEditor.ShaderProperty(_EmissionProp, "Emission");
             }
             EditorGUILayout.Space();
+
+            if(GUILayout.Button("How to use (Japanese)"))
+            {
+                System.Diagnostics.Process.Start("https://note.com/ayaha401/n/n646d68cd0dd8");
+            }
         }
         EditorGUI.EndChangeCheck();
     }
